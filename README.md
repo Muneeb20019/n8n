@@ -1,4 +1,4 @@
-# 🚀 YouTube Shorts Autopilot: Agentic Video Pipeline
+# 🚀 Agentic AI System: YouTube Shorts Automation (Veo 3 + n8n)
 
 **[🎥 Watch the AI-Generated Result](https://youtu.be/58r4kNkrQtQ)**
 
