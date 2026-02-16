@@ -1,21 +1,19 @@
-# n8n
 # 🚀 YouTube Shorts Autopilot: Agentic Video Pipeline
 
-**[🎥 View Sample Output](https://www.youtube.com/watch?v=your-video-id)** 
+**[🎥 Watch the AI-Generated Result](https://youtu.be/58r4kNkrQtQ)**
 
 ---
 
 <div align="center">
-  <!-- Replace this link with your actual video raw link or a high-res GIF -->
-  <img src="https://github.com/Muneeb20019/Sales-AI-Agent-n8n/raw/main/YouTube_Preview.png" width="100%" alt="Final AI Video Output Preview"/>
+  <img src="https://raw.githubusercontent.com/Muneeb20019/n8n/main/YouTube%20short.png" width="100%" alt="Final YouTube Result Preview"/>
 </div>
 
 ---
 
 ## 🚀 Project Overview
-Developed for **Digital Media Agencies**, this system is a "Zero-Touch" production house. It automates the complete lifecycle of short-form video creation—from **Agentic Brainstorming (Phase 1)** to **Automated Distribution (Phase 2)**. 
+Developed for digital content automation, this system is a **"Zero-Touch" Video Production House**. It automates the entire creative lifecycle—from **Agentic Brainstorming (Phase 1)** to **Automated YouTube Distribution (Phase 2)**. 
 
-The system leverages **Veo 3** for cinematic video generation and **Groq** for near-instant reasoning, producing high-fidelity social media content without human intervention.
+The system utilizes **Veo 3** for high-fidelity video generation and **Groq** for near-instant reasoning, producing professional social media content without human intervention.
 
 ---
 
@@ -23,19 +21,19 @@ The system leverages **Veo 3** for cinematic video generation and **Groq** for n
 
 | ⚙️ n8n Agentic Orchestrator | 📺 Final YouTube Publication |
 | :---: | :---: |
-| <img src="https://github.com/Muneeb20019/Sales-AI-Agent-n8n/raw/main/video_gen_workflow.png" width="450" alt="n8n Workflow"/> | <img src="https://github.com/Muneeb20019/Sales-AI-Agent-n8n/raw/main/youtube_result.png" width="400" alt="YouTube Result"/> |
+| <img src="https://raw.githubusercontent.com/Muneeb20019/n8n/main/Video%20Generation%20for%20youtube.png" width="450" alt="n8n Workflow"/> | <img src="https://raw.githubusercontent.com/Muneeb20019/n8n/main/YouTube%20short.png" width="400" alt="YouTube Result"/> |
 
 ---
 
 ## 🧠 Core Technical Pillars
 
 ### 1. 🤖 Multi-Agent Production Briefing
-The system utilizes a dual-agent architecture powered by **Groq (LPU Inference)**. 
+The system utilizes a dual-agent architecture powered by **Groq (LPU Inference)** for lightning-fast reasoning. 
 - **The Strategist:** Uses a **"Think" tool** (Chain-of-Thought) to storyboard viral ideas.
-- **The Prompt Engineer:** Performs **Contextual Expansion**, transforming raw ideas into technical "Production Briefs" (lighting, camera motion, and physics instructions) optimized for the **Veo 3** API.
+- **The Prompt Engineer:** Performs **Contextual Expansion**, transforming raw ideas into technical "Production Briefs" (lighting, camera motion, and cinematic instructions) optimized for the **Veo 3** API.
 
 ### 2. ⏳ Asynchronous Polling Lifecycle
-Since high-fidelity video generation is compute-intensive, I implemented a robust **Recursive Polling Loop**. The workflow captures a `taskId`, enters a controlled **Wait state**, and queries the API status until the render is verified. This ensures 100% reliability in data transfer for 4K assets.
+Since video generation is compute-intensive, I implemented a robust **Recursive Polling Loop**. The workflow captures a `taskId`, enters a controlled **Wait state**, and queries the API status until the render is verified. This ensures 100% reliability for high-fidelity 4K assets.
 
 ### 3. 💾 Persistence & Audit Trail (Google Sheets)
 Using **Google Sheets** as a lightweight **Production CRM**, the workflow logs every generated concept. Utilizing dynamic primary keys (`=ROW()-1`), the system maintains a "Single Source of Truth," allowing human staff to audit or edit prompts before the final video render begins.
@@ -49,11 +47,6 @@ Unlike simple link-sharing automations, this system performs full **Binary Data 
 - **🐍 Python Data Transformation:** Utilized custom **Python nodes** to sanitize AI-generated prompts, escaping special characters to ensure a valid JSON payload for the Veo 3 endpoint.
 - **🛡️ Schema Enforcement:** Integrated **Structured Output Parsers** to guarantee that Agentic brainstorming always follows a strict data schema, eliminating model "hallucination."
 - **🌍 Dynamic Metadata Mapping:** Automatically assigns YouTube **Region Codes (PK)** and Categories based on the cultural context identified by the AI during the strategy phase.
-
-<div align="center">
-  <img src="https://github.com/Muneeb20019/Sales-AI-Agent-n8n/raw/main/api_payload.png" width="600" alt="API Payload"/>
-  <p><i>🚀 Technical Production Brief mapped to the Veo 3 REST API</i></p>
-</div>
 
 ---
 
@@ -71,8 +64,8 @@ Unlike simple link-sharing automations, this system performs full **Binary Data 
 
 ## 📝 How to Use
 1.  **Trigger** the workflow via the **Schedule Trigger** for automated daily posting.
-2.  **Monitor** the Google Sheet as the AI brainstorms "Vlogger" concepts.
-3.  **The System** automatically polls the Veo 3 API until the video is successfullly rendered.
+2.  **Monitor** the Google Sheet as the AI brainstorms "Vlogger in Lahore" concepts.
+3.  **The System** automatically polls the Veo 3 API until the video is successfully rendered.
 4.  **Check** your YouTube Studio to see the private/public upload with all metadata attached.
 
 ---
